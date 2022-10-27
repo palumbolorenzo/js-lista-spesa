@@ -12,8 +12,16 @@ const eleGroceryList = document.querySelector('.grocery-list');
 const inputGroceryItem = document.querySelector('#input-grocery');
 const eleGroceryForm = document.querySelector('form');
 
+/*
 for (let i = 0; i < arrGroceryList.length; i++) {
     eleGroceryList.innerHTML += `<li>${arrGroceryList[i]}</li>`;
+}
+*/
+
+let i = 0;
+while (i < arrGroceryList.length) {
+    eleGroceryList.innerHTML += `<li>${arrGroceryList[i]}</li>`;
+    i++
 }
 
 eleGroceryForm.addEventListener('submit', function(event) {
